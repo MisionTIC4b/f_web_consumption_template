@@ -1,16 +1,11 @@
-# f_web_consumption
+# Consumo de Servicios Web
 
-A new Flutter project.
+![Web Services Consupmtion](https://user-images.githubusercontent.com/25647254/180615012-9acf4504-3ed8-469c-a535-6a8cdda45bca.gif)
 
-## Getting Started
+En este ejemplo de usa **connectivity_plus** para determinar el estado de conexión a la red y tambien **http** para consumir datos de ***JSON Placeholder***
 
-This project is a starting point for a Flutter application.
+## Recursos
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- https://jsonplaceholder.typicode.com/
+- https://pub.dev/packages/connectivity_plus
+- https://pub.dev/packages/http
