@@ -8,17 +8,10 @@ abstract class PostsManager {
   static final _random = Random();
 
   static Future<List<Post>> fetchPosts() async {
-    return await _service.fetchPosts();
+    /* TODO: retorna la lista de posts */
   }
 
   static Future<void> uploadPost() async {
-    // El post no se guardará asi que no tiene importancia cambiar estos datos.
-    final newPost = Post(
-      id: _random.nextInt(100),
-      userId: _random.nextInt(100),
-      title: 'post title',
-      body: 'post body',
-    );
-    await _service.uploadPost(newPost);
+    /* TODO: crea y sube un post */
   }
 }

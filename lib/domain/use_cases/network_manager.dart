@@ -11,8 +11,6 @@ abstract class NetworkManager {
 
   static Future<bool> isConnected(
       {ConnectivityResult? connectivityResult}) async {
-    final result = connectivityResult ?? await status;
-    return result == ConnectivityResult.mobile ||
-        result == ConnectivityResult.wifi;
+    /* TODO: retorna [true] si el metodo es mobile o wifi */
   }
 }

@@ -13,7 +13,7 @@ class NetworkDetectionPage extends GetView<NetworkController> {
         title: const Text('Network State'),
       ),
       body: FutureBuilder<String>(
-        future: controller.connectivityMethod,
+        // TODO: Obten el metodo que se usta usando para conectarse a  internet
         builder: (BuildContext context, AsyncSnapshot<String> snapshot) =>
             Center(
           child: Obx(
@@ -22,9 +22,8 @@ class NetworkDetectionPage extends GetView<NetworkController> {
               children: [
                 Text('Metodo: ${controller.connectionMethod.toUpperCase()}'),
                 ElevatedButton(
-                  onPressed: !controller.isConnected
-                      ? null
-                      : () => Get.to(() => const WebConsumptionPage()),
+                  onPressed: /* TODO: desabilita el boton si se detecta descoexion */
+                      () => Get.to(() => const WebConsumptionPage()),
                   child: const Text('Service Consumption'),
                 ),
               ],
